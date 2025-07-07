@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>align content</title>
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            .main-container{
+                width: 100%;
+                height: 100%;
+                background-color: aqua;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-content:flex-start;
+                gap: 25px;
+
+                
+
+            }
+            .box-1{
+                width: 20%;
+                height: 20%;
+                background-color: chocolate;
+            }
+            .box-2{
+                width: 20%;
+                height: 20%;
+                background-color: green;
+            }
+            .box-3{
+                width: 20%;
+                height: 20%;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+        </div>
+    </body>
+</html>

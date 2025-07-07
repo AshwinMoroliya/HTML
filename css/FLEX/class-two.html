@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product details</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        /*product images container*/
+
+        .product-images-container {
+            width: 45%;
+            height: 70%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .product-large-image {
+            width: 90%;
+            height: 70%;
+            background-color: coral;
+        }
+
+        .product-images {
+            width: 90%;
+            height: 70%;
+            background-color: antiquewhite;
+            display: flex;
+        }
+
+        .product-image {
+            width: 20%;
+            height: 90%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        /*product details container*/
+        .product-detali-container {
+            width: 45%;
+            height: 70%;
+            background-color: violet;
+        }
+
+        .first {
+            width: 100%;
+            height: 20%;
+
+        }
+
+        h1 {
+            margin-left: 10px;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+        }
+
+        .second {
+            width: 90%;
+            height: 8%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        button {
+            width: 150px;
+            height: 80%;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: orange;
+            color: #000;
+            border-radius: 9px;
+        }
+
+        .third {
+            width: 90%;
+            height: 8%;
+            background-color: lightpink;
+        }
+
+        .fourth {
+            width: 90%;
+            height: 8%;
+        }
+
+        .sixth {
+            width: 90%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .review {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+
+        .review-text {
+            width: 90%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* mobile screen*/
+        @media (max-width:480px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .product-images-container {
+                width: 90%;
+                height: 35%;
+            }
+        }
+
+        .product-details-container {
+            width: 90%;
+            height: 55%;
+        }
+
+
+        p {
+            font-size: 18px;
+        }
+
+        .first {
+            height: 35%;
+        }
+
+        .button {
+            height: 100%;
+        }
+
+        .review,
+        .review-text {
+            width: 100%;
+        }
+        /* table screen*/
+        @media (min-width:481px) and (max-width:700px) {
+            .main-container{
+                flex-direction: column;
+            }
+            .product-images-container {
+                width: 50%;
+                height: 35%;
+            }
+        }
+
+        .product-details-container {
+            width: 90%;
+            height: 55%;
+        }
+
+
+        p {
+            font-size: 18px;
+        }
+
+        .first {
+            height: 35%;
+        }
+
+        .button {
+            height: 100%;
+        }
+
+        .review,
+        .review-text {
+            width: 100%;
+            
+        }
+
+        /* for tablets screen*/
+        @media (min-width:786px) and (max-width:1024px) {
+            .product-image-container{
+               flex-direction: column;
+               height: 30%;
+            }
+            
+        }
+        .p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--product images section-->
+        <div class="product-images-container">
+            <div class="product-large-container">
+                <img
+                    src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D" />
+            </div>
+            <div class="product-images">
+                <div class="product-image">
+                    <img
+                        src="https://i.pinimg.com/736x/d4/99/36/d49936efc16bd43b230fb18635a769c5.jpg" />
+                </div>
+                <div class="product-image">
+                    <img src="https://www.cloudblue.com/wp-content/uploads/2024/06/what-is-the-internet-of-things-iot.png" />
+                </div>
+                <div class="product-image">
+                    <img src="https://cdn.britannica.com/09/241709-050-149181B1/apple-iphone-11-2019.jpg" />
+                </div>
+                <div class="product-image">
+                    <img
+                        src="https://images.macrumors.com/t/0RWq2nx2qkqevb-cL8JaSp2kFSA=/800x0/smart/article-new/2024/06/Generic-iOS-18-Feature-Real-Mock.jpg?lossy" />
+                </div>
+            </div>
+        </div>
+        <!--product details section-->
+        <div class="product-detail-container">
+            <div class="first">
+                <h2> mackbook air</h2>
+                <br />
+                <h2>$150</h2>
+                <h3>M2 chip wuth 8-core cpc, 7-core GPU,16GB unifined 256GB SSD storage</h3>
+            </div>
+            <div class="second">
+                <button>Buy Now</button>
+            </div>
+            <br />
+            <div class="third">
+                <h1>specifactions</h1>
+            </div>
+            <div class="second">
+                <p> Feature 1: High performances processer</p>
+                <p> Feature 2: High performances processer</p>
+                <p> Feature 3: High performances processer</p>
+            </div>
+            <br />
+            <div clas="fourth">
+                <h1> customer Reviews</h1>
+            </div>
+            <div class="sixth">
+                <div class="review">
+                    <p class="review-text">
+                        The product is very good -<cite> john Doe</cite>
+                    </p>
+
+                    <p class="review-text">
+                        The product is very good -<cite> john Doe</cite>
+                    </p>
+
+                    <p class="review-text">
+                        The product is very good -<cite> john Doe</cite>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

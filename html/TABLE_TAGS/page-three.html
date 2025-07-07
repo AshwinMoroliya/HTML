@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+           
+        }
+
+        .header {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(6, 43, 88);
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 30px;
+            margin-left: 5px;
+        }
+
+        .container-one {
+            height: 100%;
+            width: 30%;
+            background-color: rgb(14, 118, 245);
+        }
+
+        .container-two {
+            height: 100%;
+            width: 70%;
+            background-color: aliceblue;
+
+        }
+
+        .home {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-1 {
+            font-size: 20px;
+            margin-left: 5px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            height: 480px;
+            background-color: rgb(127, 255, 212);
+            
+
+        }
+
+        .tr {
+            border-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center ;   
+           
+        }
+
+        td {
+            border-radius: 10px;
+            border-width: 1px;
+            font-size: 20px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+    <div>
+        <h1>Student portal</h1>
+    </div>
+        <!-- <h1>student portal</h1> -->
+        <div class="header">    
+            <h2>Dashboard</h2>
+            <h2> Report</h2>
+            <h2> setting</h2>
+            <h2>logout</h2>
+        </div>
+        <div class="home">
+            <div class="container-one">
+                <div class="box-1">
+                    <h1> Menu</h1>
+                    <br>
+                    <br>
+                    <h2>overview</h2>
+                    <h2>My course</h2>
+                    <h2>Assignments</h2>
+                    <h2>performens</h2>
+                    <h2>profiles</h2>
+                </div>
+            </div>
+            <div class="container-two">
+                <h1 style="background-color: blue; height:15%;">Student scores</h1>
+                
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>subjects</td>
+                        <td>marks</td>
+                        <td>Grade</td>
+                    </tr>
+                    <tr>
+                        <td>Arjun</td>
+                        <td>English</td>
+                        <td>85</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Aryan</td>
+                        <td>maths</td>
+                        <td>77</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Srujan</td>
+                        <td>Science</td>
+                        <td>83</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Ayush</td>
+                        <td>marathi</td>
+                        <td>65</td>
+                        <td>C+</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

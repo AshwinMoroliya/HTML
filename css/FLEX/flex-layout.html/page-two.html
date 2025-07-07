@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page two of Flex</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            background-color: #9BC09C;
+        }
+
+        .box-1 {
+            width: 100%;
+            height: 25%;
+            background-color: lightcoral;
+        }
+
+        .colum-one {
+            width: 25%;
+            height: 100%;
+            background-color: red;
+        }
+
+        .box-2 {
+            width: 100%;
+            height: 50%;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .colum-two {
+            width: 50%;
+            height: 100%;
+            background-color: lightgreen;
+           
+        }
+
+        .box-3 {
+            width: 100%;
+            height: 25%;
+            background-color: lightsalmon;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .colum-three {
+            width: 25%;
+            height: 100%;
+            background-color: red;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="box-1">
+            <div class="colum-one"></div>
+        </div>
+
+        <div class="box-2">
+            <div class="colum-two"></div>
+        </div>
+
+        <div class="box-3">
+            <div class="colum-three"></div>
+        </div>
+    </div>
+</body>
+
+</html>

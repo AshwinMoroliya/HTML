@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Table Layout</title>
+        <style>
+            table{
+                width: 100%;
+                background-color:#3d343b ;
+            }
+            td{
+                background-color: #cf3b63;
+            }
+            .row-one{
+                height: 80px;
+                font-size: 40px;
+                text-align: center;
+            }
+            .row-two{
+                background-color: #129990;
+                height: 400px;
+                text-align: center;
+            }
+            .row-Three{
+                background-color: #8c61d6;
+                height: 400px;
+            }
+            .row-four{
+                background-color: #B2CD9C;
+                height: 400px;
+                text-align: center;
+             
+            }
+            h1{
+               font-size: 40px;
+               font-weight: 700;
+               font-family: 'Courier New', Courier, monospace;
+            }
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+            }
+            span{
+                font-size: 50px;
+                color: #3d343b;
+            }
+            p{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <!--Row one-->
+            <tr class="row-one">
+                <td>Home</td>
+                <td>About</td>
+                <td>project</td>
+                <td>Contact</td>
+            </tr>
+            <!--Row two-->
+            <tr>
+                <td colspan="4" class=" row-two">
+                    <h1> Welcome to my website</h1>
+                    <span> MY name is <b>Ashwin</b></span>
+                    <h2>I am a web developer</h2>
+                </td>
+              
+            </tr>
+            <!--Row Three-->
+            <tr>
+                <td colspan="4" class="row-Three">
+                    <p> I am web developer and i love coding sucess is a not a destination life is race so dont take it easy </p>
+                </td>
+               
+            </tr>
+            <!-- Row four -->
+             <tr>
+                <td colspan="4" class="row-four">
+                    <p><b>Email:</b><b>ashwinmoroliya365@gmail.com</b></p>
+                    <p><b>Phone:</b> <b>2244550987</b></p>
+                    <p><b>Github:</b><b>Click Here</b></p>
+                    <p><b>Address</b></p>
+                </td>
+               
+             </tr>
+             <!--Row five-->
+             <tr class="row-one">
+                <td> Email ID</td>
+                <td> Moblie NO.</td>
+                <td> Github </td>
+                <td> Address</td>
+             </tr>
+        </table>
+    </body>
+</html>
