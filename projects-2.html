@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brennan McGrath – Lovers Magazine</title>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #b2b2b2;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  background: white;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: serif;
+  font-weight: bold;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.nav a,
+.search-icon {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+}
+
+.name {
+  font-size: 160px;
+  font-weight: 700px;
+ 
+}
+
+.bio-box {
+  background: white;
+  padding: 40px;
+  width: 60%;
+  height: 40%;
+  
+}
+
+.bio-box p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+
+.read-link {
+  color: black;
+  cursor: pointer;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcdcdc;
+}
+
+.right-section img {
+  height: 100%;
+  width: 600px;
+  border-radius: 4px;
+}
+
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Lovers Magazine ▼</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Interviews</a>
+      <a href="#">Mixes</a>
+      <span class="search-icon">🔍</span>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="left-section">
+      <h1 class="name">BRENNAN<br/>MCGRATH</h1>
+      <div class="bio-box">
+        <p>Brennan McGrath is a Partner at Combo, an independent strategy, design, and creative office in New York City.</p>
+        <div class="footer">
+          <span>No. 609</span>
+          <span class="read-link">Read Interview</span>
+        </div>
+      </div>
+    </section>
+    <section class="right-section">
+      <img src="https://spaces.is/media/pages/loversmagazine/interviews/brennan-mcgrath/8a82b0dd01-1751989842/combo-headshots_0618250275-1-860x1204-crop-q85.webp" alt="Brennan McGrath" />
+    </section>
+  </main>
+</body>
+</html>
