@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean Grid Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer"
+        "section section section";
+      grid-template-columns: 1fr 2fr 2fr;
+      grid-template-rows: auto;
+      height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: rgb(109, 207, 240);
+     padding: 20px;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: red;
+     padding: 20px;
+    }
+
+    main {
+      grid-area: main;
+      background-color: lightcoral;
+      padding: 20px;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: lightsalmon;
+      padding: 20px;
+    }
+
+    section {
+      grid-area: section;
+      background-color: lightslategray;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header>Header</header>
+    <aside>Aside</aside>
+    <main>Main Content</main>
+    <footer>Footer</footer>
+    <section>Section</section>
+  </div>
+</body>
+</html>
