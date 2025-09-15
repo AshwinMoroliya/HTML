@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+      
+        .body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            background-color:#00809D;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .container-one{
+            width: 60%;
+            height: 80%;
+            background-color: rgb(228, 238, 215);
+            margin-top: 50px;
+            border-radius: 10px;
+          
+        }
+         .label{
+            width: 40%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .color{
+         background-color: lightgray;   
+         font-size: 40px;
+         margin-left: 200px;
+         margin-top: 25px;
+         border-radius: 10px;
+        }
+        .btn{
+            width: 200px;
+            height: 50px;
+            margin-left: 300px;
+            margin-top: 30px;
+            background-color: #00809D;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background: #026de7;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container-one">
+        <h1 style="text-align: center;"> Registration Form </h1>
+            <form>
+                <label >
+                    <input class="color" type="text" placeholder="Name*" />
+                </label>
+                  <br/>
+                  <br/>
+                <label> 
+                    <input class="color" type="text" placeholder="Email*"/>
+                </label>
+                <br>
+                <br>
+                <label> 
+                    <input class="color" type="number" placeholder="Mobile No*"/>
+                </label>
+                <br>
+                <br>
+                <label> 
+                  <input class="color" type="text" placeholder="Subject*"/>
+                </label>
+                <br>
+                <br>
+                 <label> 
+                    <input class="color" type="text" placeholder="Message*"/>
+                    <br>
+                    <br\>
+                    <button class="btn">Submit</button>
+                 </label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
