@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Ex on colspan & rowspan</title>
+    <style>
+        table {
+            background-color: black;
+            width: 100%;
+
+        }
+
+        td {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        .color-one{
+            background-color: #129990;
+        }
+        .colour-two{
+            background-color: #48A6A7;
+        }
+        .colour-three{
+            background-color: #129990;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <!--row one-->
+            <td colspan="5" class="color-one">1</td>
+            
+             
+        </tr>
+        <tr>
+            <!--Row two-->
+            <td rowspan="3" colspan="2" style="width: 30%;">6</td>
+            <td colspan="3" style="background-color: ;" class="colour-two">8</td>
+          
+        </tr>
+        <tr>
+            <!--Row three-->
+            
+            <td colspan="3" class="colour-two">11</td>
+          
+
+        </tr>
+        <tr>
+            <!--Row four-->
+            <td colspan="3" class="colour-three">16</td>
+          
+          
+
+        </tr>
+    </table>
+</body>
+
+</html>

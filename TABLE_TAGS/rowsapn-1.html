@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> rowspan</title>
+        <style>
+            table{
+                 width: 100%;
+                 height: 700px;
+            }
+            td{
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+            }
+            .colour-one{
+                background-color: #7F8CAA;
+            }
+            .colour-two{
+                background-color:#333446 ;
+            }
+            .colour-three{
+                background-color: #71C0BB;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <!--Row one-->
+            <tr>
+              <td style="width: 30%;" class="colour-three">1</td>
+              <td colspan="2;" class="colour-two">2</td>
+              
+            </tr>
+            <!--row two>-->
+            <tr>
+                <td colspan="2;" class="colour-two">5</td>
+                <td style="width: 30%;" class="colour-three">6</td>
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>

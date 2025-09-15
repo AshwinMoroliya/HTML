@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            border-radius: 2px;
+        }
+
+        .header {
+            width: 600px;
+            height: 10%;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .footer {
+            background-color: lightsalmon;
+            width: 600px;
+            height: 10%;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .middle-colum {
+            background: #96c978;
+            font-size: 50px;
+            text-align: center;
+            background: linear-gradient(red, rgb(153, 0, 255), black);
+            height: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--main container-->
+    <table class="container">
+        <!--row one start-->
+        <tr class="row-1">
+            <td style="background-color: #96c978;" class="header">Home</td>
+            <td style="background-color: aqua;" class="header">About</td>
+            <td style="background-color: lightsalmon;" class="header">project</td>
+            <td style="background-color: lightslategray;" class="header">Contact</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="middle-colum">WELCOME TO MY WEBSITE</td>
+        </tr>
+
+        <tr>
+            <td style="background-color: #00809D;" class="footer">Phone .No</td>
+            <td style="background-color: #254D70;" class="footer">Email ID</td>
+            <td style="background-color: #954C2E;" class="footer">Github Link</td>
+            <td style="background-color: #E6521F;" class="footer">Address</td>
+        </tr>
+    </table>
+</body>
+
+</html>
