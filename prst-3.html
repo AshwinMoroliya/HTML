@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .box {
+            border: solid black 1px;
+            background-color: rgb(213, 123, 87);
+        }
+
+        .col-span-1 {
+            grid-column: span 2;
+        }
+
+        .col-span-2 {
+            grid-column: span 4;
+        }
+
+        .col-span-3 {
+            grid-column: span 3;
+        }
+
+        .row-span-1 {
+            grid-row: span 2;
+        }
+
+        .row-span-2 {
+            grid-row: span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box col-span-3">Header</div>
+        <div class="box row-span-2  ">Hero</div>
+        <div class="box col-span-1 row-span-2">Main content</div>
+        <div class="box row-span-1">side Bar</div>
+        <div class="box">Extra content</div>
+        <div class="box">Related Images</div>
+        <div class="box">Related</div>
+        <div class="box">footer</div>
+    </div>
+</body>
+
+</html>

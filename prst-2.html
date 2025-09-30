@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100wh;
+            height: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(82, 179, 211);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+        }
+
+        .box {
+            border: solid black 1px;
+            background-color: lightcoral;
+        }
+
+        .col-sapn-1 {
+            grid-column: span 2;
+        }
+
+        .col-sapn-2 {
+            grid-column: span 3;
+        }
+
+
+        .row-sapn-1 {
+            grid-row: span 2;
+        }
+
+        .row-sapn-2 {
+            grid-row: span 3;
+        }
+
+        .row-sapn-3 {
+            grid-row: span 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box  row-sapn-1">1</div>
+        <div class="box row-sapn-1">2</div>
+        <div class="box row-sapn-3">3</div>
+        <div class="box col-sapn-1 row-sapn-1">4</div>
+        <div class="box row-sapn-2">5</div>
+        <div class="box row-sapn-1">6</div>
+        <div class="box row-sapn-1">7</div>
+        <div class="box row-sapn-2">8</div>
+        <div class="box ">9</div>
+        <div class="box col-sapn-1 ">10</div>
+    </div>
+</body>
+
+</html>
