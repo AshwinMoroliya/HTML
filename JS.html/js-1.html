@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 300px;
+            height: 150px;
+            background-color: rgb(209, 126, 202);
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        //block of codes
+        function showoutput() {
+            let x = document.getElementById("input-one").value;
+            let y= document.getElementById("input-two").value;
+            document.getElementById("display").innerHTML =x * y;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container" id="display"></div>
+        <input type="text" class="input-filed" id="input-one" placeholder="give an input..." />
+        <input type="text" class="input-filed" id="input-two"/>
+        <button onclick="showoutput()">Click Me</button>
+    </div>
+</body>
+
+</html>
