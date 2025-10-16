@@ -45,7 +45,6 @@
 
         .box {
             margin-top: 400px;
-            width: 400px;
 
 
 
@@ -55,11 +54,14 @@
         //block of codes
         function showoutput() {
             //input
-            let x = document.getElementById("input-one").value;
+            let x = Number(document.getElementById("input-one").value);
+            let y = Number(document.getElementById("input-two").value);
+
             //process
-            let y = x * 2;
+            let z = x + y;
+            let s = x - y;
             //output
-            document.getElementById("display").innerHTML =  y;
+            document.getElementById("display").innerHTML = " sum is" + z;
 
         }
 
@@ -72,7 +74,8 @@
             <div class="mid-container" id="display">
                 <div class="box">
                     <input type="text" class="input-filed" id="input-one" placeholder="give an input..." />
-            
+                    <input type="text" class="input-filed" id="input-two" placeholder="give an input..." />
+
                     <button onclick="showoutput()">Click Me</button>
                 </div>
             </div>
