@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main {
+      height: 100vh;
+      width: 100vw;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgb(237, 216, 177);
+      height: 700px;
+      width: 500px;
+      border-style: solid;
+      border-radius: 10px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <h1 id="name"></h1>
+      <h2 id="age">
+        <b></b>
+      </h2>
+      <h3 id="school"></h3>
+      <h4 id="Email"></h4>
+    </div>
+
+  </div>
+
+</body>
+<script>
+  let profileIamge = "./https://static.vecteezy.com/system/resources/previews/035/624/082/non_2x/user-profile-person-icon-in-flat-isolated-in-suitable-for-social-media-man-profiles-screensavers-depicting-male-face-silhouettes-for-apps-website-vector.jpg"
+  let name = " Hi! I'M Ashwin moroliya";
+  let age = 17;
+  let school = "ORCHID PUCLIC SCHOOL"
+  let clasS = "Engineering Lab";
+  let phoneNO = "799622742";
+  let AddersS = "panchvati areA";
+  let citY = "katol";
+  let Email = "ashwinmoroliya365@gmail.com";
+  let skills = "HTML, CSS & JS .....";
+  let hobbies = "learning to learn new things & waching Movie";
+  let favMovies = "The Dark Knight & The Godfather ";
+
+
+  
+  document.getElementById("name").innerHTML =  "<b>"+name+"<b/>";
+  document.getElementById("age").innerHTML = age;
+  document.getElementById("school").innerHTML = school;
+  document.getElementById("Email").innerHTML = Email;
+
+
+</script>
+
+</html>
