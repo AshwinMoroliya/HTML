@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgoldenrodyellow;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box-1 {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(248, 248, 149);
+            border-radius: 30px;
+        }
+
+        .sub-box {
+            width: 400px;
+            height: 200px;
+            background-color: lightslategray;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-2 {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1">
+            <div class="sub-box" id="one">
+            </div>
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+            <button onclick="four()">4</button>
+        </div>
+    </div>
+    <script>
+        function one() {
+            document.getElementById("one").innerHTML += 1;
+        }
+        function two() {
+            document.getElementById("one").innerHTML += 2;
+        }
+        function three() {
+            document.getElementById("one").innerHTML += 3;
+        }
+        function four() {
+            document.getElementById("one").innerHTML += 4;
+        }
+    </script>
+</body>
+
+</html>
