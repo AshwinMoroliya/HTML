@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Current Balance</h3>
+    <h3 id="display"></h3>
+    <input type="number" id="input" placeholder="">
+    <button onclick="FuctionOne()">ADD</button>
+    <button onclick="myFuctiontwo()">sub</button>
+
+
+    <script>
+        let Anwesh = 0;
+        document.getElementById("display").innerHTML = Ashwin;
+        function FuctionOne() {
+            let Ashwin = document.getElementById("input").value;
+            Ashwin = Ashwin + Number(Anwesh)
+            document.getElementById("display").innerHTML = Ashwin;
+        }
+
+
+        let Balance = 1000;
+        document.getElementById("display").innerHTML = Balance;
+        function myFuctiontwo() {
+            let Balance = 1000;
+            let amount = document.getElementById("input").value;
+            Balance = Balance - Number(amount)
+            document.getElementById("display").innerHTML = Balance;
+        }
+    </script>
+</body>
+
+</html>

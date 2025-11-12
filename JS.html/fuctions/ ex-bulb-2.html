@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            background-color: lightblue;
+        }
+
+        .card {
+            width: 40%;
+            height: 60%;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 300px;
+        }
+
+        .card-img {
+            width: 80%;
+            height: 60%;
+            background-color: lightcoral;
+
+        }
+
+        .btn {
+            width: 80%;
+            height: 40%;
+            background-color: rgb(153, 122, 255);
+            margin-top: 100px;
+            font-size: 44px;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="card-img">
+                <img src="" alt="" id="image">
+            </div>
+            <div class="btn">
+                <button onclick="imageOne()"> 1st image</button>
+                <button onclick="imageTwo()"> 2nd image</button>
+                <button onclick="imageThree()"> 3rd image</button>
+                <button onclick="imageFour()"> 4th image</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function imageOne() {
+            document.getElementById("image").src = "data:image/jpeg;base64,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"
+        }
+        function imageTwo() {
+            document.getElementById("image").src = "/Users/Guest/Downloads/HTML-main/JS.html/download-removebg-preview.png"
+        }
+        function imageThree() {
+            document.getElementById("image").src = "https://m.media-amazon.com/images/I/61gnvT0-KyL.jpg"
+        }
+        function imageFour() {
+            document.getElementById("image").src = "https://m.media-amazon.com/images/I/613lWiTCRLL.jpg"
+        }
+    </script>
+</body>
+
+</html>
