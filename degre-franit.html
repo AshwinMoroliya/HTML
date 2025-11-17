@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple UI</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    input {
+      padding: 8px;
+      width: 200px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="display" class="container">  </div>
+    <input id="textInput" type="text" placeholder="Type something...">
+    <input id="textInput2" type="text" placeholder="Type something...">
+    <button onclick="value1()">degree</button>
+     <button onclick="Value2()">ferainate</button>
+
+
+  <script>
+     function value1(){
+     let x = document.getElementById("textInput").value;
+     
+      let y = x*(9/5)+32;
+      document.getElementById("display").innerHTML = "degree censious "+y; 
+     } 
+     function Value2(){
+     let a = document.getElementById("textInput2").value;
+      y = (a-32)*5/9;
+      document.getElementById("display").innerHTML ="degree to farinite "+ y; 
+    }
+  </script>
+</body>
+</html>

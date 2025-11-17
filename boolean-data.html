@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            background-color: lightslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 80%;
+            height: 80%;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 style="text-align :center; ">Password Validator</h1>
+            <input style="margin-left: 130px; width: 70%; height: 10%; margin-top: 200px;"  type="text" id="input" placeholder="Enter password">
+            <br>
+            <br>
+            <button onclick="one()" style="margin-left: 250px; background-color: brown;  width: 50%; height: 10%; "><h2>Match password</h2></button>
+        </div>
+    </div>
+
+
+    <script>
+        function one(){
+            let user1 = document.getElementById("input").value
+            let user2 = "Ashwin"
+            let user3 = user1==user2
+            alert(user3)
+            
+        }
+    </script>
+</body>
+</html>

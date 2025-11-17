@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive eligibility checker</title>
+</head>
+<style>
+    .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: lightslategray;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-1 {
+        width: 80%;
+        height: 80%;
+        background-color: whitesmoke;
+    }
+
+    input {
+        width: 60%;
+        height: 10%;
+        margin-left: 200px;
+    }
+
+    button {
+        margin-left: 200px;
+        width: 60%;
+        height: 10%;
+        background-color: rgb(76, 137, 15);
+    }
+</style>
+
+<body class="main">
+    <div class="container-1">
+        <h1 style="text-align: center;">Drive Eligibility checker</h1>
+        <br>
+        <br>
+         <p style="text-align: center;">Your:Age</p>
+        <input type="number" id="input">
+        <br>
+        <br>
+        <br>
+        <br>
+        <button  onclick="one()">check Eligibility</button>
+    </div>
+
+    <script>
+        function one() {
+            let Age1 = document.getElementById("input").value
+            let Age2 = 18;
+            let user3 = Age1 >= Age2;
+            alert(user3)
+          
+
+        }
+    </script>
+</body>
+
+</html>
