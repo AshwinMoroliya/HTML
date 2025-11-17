@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <script>
+
+        function add() {
+            let x = document.getElementById("input").value;
+            let y = 0;
+            y = y + Number(x);
+            document.getElementById("dispaly").innerHTML = y;
+        }
+        function sub() {
+            let x = document.getElementById("input").value;
+            let y = 10000;
+
+            y = y - x;
+
+
+            document.getElementById("dispaly").innerHTML = y;
+        }
+    </script>
+</head>
+
+<body>
+    <p id="dispaly"></p>
+    <input id="input" type="text">
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+</body>
+
+</html>
