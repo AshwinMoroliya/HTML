@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fan checker</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container-1 {
+            width: 40%;
+            height: 20%;
+            box-shadow: 5px 5px 50px 2px lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>Javascript Fan checker</h2>
+        <p id="dispaly"></p>
+    </div>
+
+    <script>
+        let answer = confirm("your javascript Fan checker")
+        document.getElementById("dispaly").innerHTML=answer;
+    </script>
+</body>
+
+</html>
