@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main {
+            width: 50%;
+            height: 30%;
+            box-shadow: 5px 5px 50px 2px lightgray
+        }
+        button{
+            background-color:rgb(161, 88, 229);
+            font-size: larger;
+            color: aliceblue;
+        }
+        b{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+       
+        <h2>Favorite Programming Lauguage</h2>
+        <button onclick="one()">Tell us your Favorite Lauguage</button>
+         <p><b id="display"></b>Your Favorite Lauguage:</p>
+    </div>
+
+    <script>
+        function one(){
+            document.getElementById("display").innerHTML="Your Favorite Lauguage:"
+
+        }
+    </script>
+</body>
+
+</html>
