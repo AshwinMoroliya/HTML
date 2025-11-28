@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 45%;
+            height: 80%;
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin-top: 10px 0;
+            
+          
+        }
+
+        button {
+            background-color: rgb(56, 176, 216);
+            width: 500px;
+            height: 50px;
+            margin-top: 50px;
+            margin-left: 3.5%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container" id="status">
+            <h1>Temperature Checker</h1>
+            <input type="text" id="degre" placeholder="Enter Temperature">
+            <button onclick="btn()">Check Temperature</button>
+        </div>
+    </div>
+
+    <script>
+        function btn() {
+            let x = document.getElementById("degre").value;
+
+            if (x >= 30) {
+
+                document.getElementById("status").innerHTML = "it's hot🔥";
+            } else {
+                document.getElementById("status").innerHTML = "it's cold❄️";
+            }
+        }
+    </script>
+</body>
+
+</html>

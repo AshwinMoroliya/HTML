@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Voter UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: gray;
+            cursor: not-allowed;
+        }
+
+        .display {
+            margin-top: 15px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        @media (min-width:100px) and (max-width:700px){
+            .container{
+                width: 90%;
+                height: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Voter Panel</h2>
+        <div id="status" class="display"></div>
+        <input id="voterInput" type="text" placeholder="Enter your age">
+        <button id="voteBtn" onclick="voters()">Submit Vote</button>
+    </div>
+
+    <script>
+        function voters() {
+            let x = document.getElementById("voterInput").value;
+
+            if (x >= 30) {
+
+                document.getElementById("status").innerHTML = "it's hot🔥";
+            } else {
+                document.getElementById("status").innerHTML = "it's cold❄️";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

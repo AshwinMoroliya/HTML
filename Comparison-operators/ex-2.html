@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="box">
+    <button style="height: 30px; width: 30px;" onclick="voter()">btn</button>
+    <script>
+        function voter() {
+            let x = document.getElementById("box").value;
+            if (x >= 18) {
+                console.log("Adult")
+                alert("Adult")
+            }
+            else {
+                console.log("child")
+                alert("chlid")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
